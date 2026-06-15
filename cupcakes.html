@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cupcakes</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f8f5f0;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:40px;
+            color:#5a3e2b;
+        }
+
+        .contenedor{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .producto{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .producto:hover{
+            transform:translateY(-5px);
+        }
+
+        .producto img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .info{
+            padding:15px;
+        }
+
+        .info h3{
+            color:#5a3e2b;
+            margin-bottom:10px;
+        }
+
+        .info p{
+            color:#666;
+            margin-bottom:15px;
+        }
+
+        .precio{
+            font-size:20px;
+            font-weight:bold;
+            color:#c27b3f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>  Cupcakes</h1>
+
+    <div class="contenedor">
+
+ <div class="producto"><img src="img/cupcake1.jpg"><div class="info"><h3>Vainilla</h3><p>Cupcake clásico de vainilla.</p><div class="precio">$5.000</div></div></div>
+ <div class="producto"><img src="img/cupcake2.jpg"><div class="info"><h3>Chocolate</h3><p>Relleno de chocolate.</p><div class="precio">$5.500</div></div></div>
+    <div class="producto"><img src="img/cupcake3.jpg"><div class="info"><h3>Fresa</h3><p>Crema y sabor a fresa.</p><div class="precio">$5.500</div></div></div>
+    <div class="producto"><img src="img/cupcake4.jpg"><div class="info"><h3>Oreo</h3><p>Decorado con Oreo.</p><div class="precio">$6.000</div></div></div>
+    <div class="producto"><img src="img/cupcake5.jpg"><div class="info"><h3>Nutella</h3><p>Relleno de Nutella.</p><div class="precio">$6.500</div></div></div>
+    <div class="producto"><img src="img/cupcake6.jpg"><div class="info"><h3>Red Velvet</h3><p>Con crema de queso.</p><div class="precio">$6.500</div></div></div>
+    <div class="producto"><img src="img/cupcake7.jpg"><div class="info"><h3>Arequipe</h3><p>Con topping de arequipe.</p><div class="precio">$6.000</div></div></div>
+    <div class="producto"><img src="img/cupcake8.jpg"><div class="info"><h3>Limón</h3><p>Refrescante sabor cítrico.</p><div class="precio">$5.500</div></div></div>
+    <div class="producto"><img src="img/cupcake9.jpg"><div class="info"><h3>Frutos Rojos</h3><p>Decorado con frutas.</p><div class="precio">$6.500</div></div></div>
+    <div class="producto"><img src="img/cupcake10.jpg"><div class="info"><h3>Especial</h3><p>Especial de la casa.</p><div class="precio">$7.000</div></div></div>
+</div>     

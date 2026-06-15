@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batidos</title>
+
+     
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f8f5f0;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:40px;
+            color:#5a3e2b;
+        }
+
+        .contenedor{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .producto{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .producto:hover{
+            transform:translateY(-5px);
+        }
+
+        .producto img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .info{
+            padding:15px;
+        }
+
+        .info h3{
+            color:#5a3e2b;
+            margin-bottom:10px;
+        }
+
+        .info p{
+            color:#666;
+            margin-bottom:15px;
+        }
+
+        .precio{
+            font-size:20px;
+            font-weight:bold;
+            color:#c27b3f;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+
+    <h1>🥤 Batidos</h1>
+
+<div class="contenedor">
+    <div class="producto"><img src="img/batido de fresa.png"><div class="info"><h3>Fresa</h3><p>Batido natural de fresa.</p><div class="precio">$8.000</div></div></div>
+    <div class="producto"><img src="img/batido banano.png"><div class="info"><h3>Banano</h3><p>Cremoso y nutritivo.</p><div class="precio">$8.000</div></div></div>
+    <div class="producto"><img src="img/batido  mango.png"><div class="info"><h3>Mango</h3><p>Refrescante sabor tropical.</p><div class="precio">$8.500</div></div></div>
+    <div class="producto"><img src="img/batido chocolate.png"><div class="info"><h3>Chocolate</h3><p>Ideal para los amantes del cacao.</p><div class="precio">$9.000</div></div></div>
+    <div class="producto"><img src="img/batido oreo.png"><div class="info"><h3>Oreo</h3><p>Con trozos de galleta.</p><div class="precio">$10.000</div></div></div>
+    <div class="producto"><img src="img/batido vainilla.png"><div class="info"><h3>Vainilla</h3><p>Suave y delicioso.</p><div class="precio">$8.500</div></div></div>
+    <div class="producto"><img src="img/batido frutos rojos.png"><div class="info"><h3>Frutos Rojos</h3><p>Mezcla de frutas frescas.</p><div class="precio">$10.000</div></div></div>
+    <div class="producto"><img src="img/batido piñacoco.png"><div class="info"><h3>Piña Colada</h3><p>Piña y coco.</p><div class="precio">$9.500</div></div></div>
+    <div class="producto"><img src="img/batido cafe.png"><div class="info"><h3>Café</h3><p>Batido frío de café.</p><div class="precio">$10.500</div></div></div>
+    <div class="producto"><img src="img/batido especial.png"><div class="info"><h3>Especial de la Casa</h3><p>Combinación exclusiva.</p><div class="precio">$12.000</div></div></div>
+</div>

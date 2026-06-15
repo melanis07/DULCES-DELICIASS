@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos | Dulces Delicias</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background:#d8c3a5;
+    font-family:Georgia, serif;
+}
+
+.productos-page{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h1{
+    font-size:60px;
+    color:#4e342e;
+}
+
+.titulo p{
+    font-size:22px;
+    color:#6d4c41;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    text-decoration:none;
+    color:#3e2723;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.info{
+    padding:25px;
+}
+
+.info h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.info p{
+    line-height:1.7;
+    font-size:18px;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    background:#6d4c41;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+}
+
+.estadisticas{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:70px;
+}
+
+.caja{
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+}
+
+.caja h2{
+    color:#6d4c41;
+    font-size:40px;
+}
+
+.caja p{
+    margin-top:10px;
+}
+
+.volver{
+    display:block;
+    width:250px;
+    margin:60px auto;
+    text-align:center;
+    text-decoration:none;
+    background:#6d4c41;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+@media(max-width:768px){
+
+    .titulo h1{
+        font-size:40px;
+    }
+
+    .estadisticas{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🥤 Dulces Delicias
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+<body>
+
+<section class="productos-page">
+
+    <div class="titulo">
+        <h1>Nuestros Productos</h1>
+        <p>Descubre todas nuestras categorías</p>
+    </div>
+
+    <div class="cards">
+
+        <!-- BATIDOS -->
+
+        <a href="batidos.html" class="card">
+
+            <img src="img/PORTADA_BATIDOS.jpg" alt="Batidos">
+
+            <div class="info">
+                <h3>🥤 Batidos</h3>
+
+                <p>
+                    Más de 10 sabores elaborados con frutas frescas,
+                    chocolate premium y los mejores ingredientes.
+                </p>
+
+                <span class="boton">
+                    Ver Catálogo
+                </span>
+            </div>
+
+        </a>
+
+        <!-- PANQUEQUES -->
+
+        <a href="panqueques.html" class="card">
+
+            <img src="img/PORTADA_PANQUEQUES.jpg" alt="Cupcakes">
+
+            <div class="info">
+
+                <h3>🧁 Panqueques</h3>
+
+                <p>
+                    Deliciosas combinaciones para cualquier ocasión,
+                    con decoraciones artesanales y sabores únicos.
+                </p>
+
+                <span class="boton">
+                    Ver Catálogo
+                </span>
+
+            </div>
+
+        </a>
+
+
+ <!-- CUPCAKES -->
+
+        <a href="cupcakes.html" class="card">
+
+            <img src="img/PORTADA_CUPCAKES.jpg" alt="Cupcakes">
+
+            <div class="info">
+
+                <h3>🧁 Cupcakes</h3>
+
+                <p>
+                    Deliciosas combinaciones para cualquier ocasión,
+                    con decoraciones artesanales y sabores únicos.
+                </p>
+
+                <span class="boton">
+                    Ver Catálogo
+                </span>
+
+            </div>
+
+        </a>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- POSTRES -->
+
+        <a href="postres.html" class="card">
+
+            <img src="img/PORTADA_POSTRES.jpg" alt="Postres">
+
+            <div class="info">
+
+                <h3>🍰 Postres</h3>
+
+                <p>
+                    Cheesecakes, brownies, tres leches, mousse
+                    y muchas opciones más para disfrutar.
+                </p>
+
+                <span class="boton">
+                    Ver Catálogo
+                </span>
+
+            </div>
+
+        </a>
+
+    </div>
+
+    <div class="estadisticas">
+
+        <div class="caja">
+            <h2>30+</h2>
+            <p>Productos Disponibles</p>
+        </div>
+
+        <div class="caja">
+            <h2>100%</h2>
+            <p>Ingredientes Frescos</p>
+        </div>
+
+        <div class="caja">
+            <h2>★★★★★</h2>
+            <p>Satisfacción de Clientes</p>
+        </div>
+
+    </div>
+
+    <a href="productos.html" class="volver">
+        Volver al Inicio
+    </a>
+
+</section>
+
+</body>
+</html>
